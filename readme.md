@@ -11,9 +11,9 @@
 This package provides the exact same interface and functionality as
 [`retext-spell`][retext-spell] with the addition of one feature.
 
-If you do not pass the `personal` attribute in the options to
+If you do not pass the **`personal`** attribute in the options to
 `retext-spell-file`, it will look (upwards in the directory hierarchy) for a
-file called `.dictionary.txt` and feed those contents as a string to the
+file called **`.dictionary.txt`** and feed those contents as a string to the
 `personal` attribute of `retext-spell`.
 
 * See the [Hunspell dictionaries][hunspell] for a discussion of the **personal
@@ -33,6 +33,7 @@ it][issues].
 <!-- Definitions, sorted alphabetically -->
 
 [author]: https://github.com/spl
+[dictionary]: ./.dictionary.txt
 [hunspell]: https://linux.die.net/man/4/hunspell
 [license]: ./license.md
 [retext-spell]: https://github.com/retextjs/retext-spell
