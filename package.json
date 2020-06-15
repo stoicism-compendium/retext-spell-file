@@ -27,7 +27,6 @@
   },
   "devDependencies": {
     "depcheck": "^0.9.2",
-    "dictionary-en": "^3.0.0",
     "eslint": "^7.2.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.21.2",
@@ -35,11 +34,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "remark-cli": "^8.0.0",
-    "remark-preset-stoicism": "git+https://github.com/stoicism-compendium/remark-preset-stoicism.git",
-    "remark-retext": "^4.0.0",
-    "retext-english": "^3.0.4",
-    "retext-syntax-urls": "^2.0.0",
-    "unified": "^9.0.0"
+    "remark-preset-stoicism": "git+https://github.com/stoicism-compendium/remark-preset-stoicism.git"
   },
   "scripts": {
     "depcheck": "depcheck",
