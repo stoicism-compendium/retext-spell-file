@@ -2,9 +2,13 @@
 
 <!-- Badges -->
 
+![tests][tests-badge]
+
 <!-- Brief description -->
 
 > Simple wrapper for `retext-spell` that uses a personal dictionary file.
+
+<!-- Sections -->
 
 ## Introduction
 
@@ -35,6 +39,7 @@ it][issues].
 [author]: https://github.com/spl
 [dictionary]: ./.dictionary.txt
 [hunspell]: https://linux.die.net/man/4/hunspell
+[issues]: https://github.com/spl/retext-spell-file/issues
 [license]: ./license.md
 [retext-spell]: https://github.com/retextjs/retext-spell
-[issues]: https://github.com/spl/retext-spell-file/issues
+[tests-badge]: https://github.com/stoicism-compendium/retext-spell-file/workflows/tests/badge.svg
