@@ -17,8 +17,8 @@ This package provides the exact same interface and functionality as
 
 2. **`retext-spell-file`** also takes a `personal` option. But if that
    `personal` option is falsy, it will search up the directory hierarchy for a
-   file called **`.respell`** (UTF-8) and read its contents into the value
-   passed to `personal`.
+   file named **`.respell`** (UTF-8) and read its contents into the value passed
+   to `personal`.
 
 <!-- Sections -->
 
