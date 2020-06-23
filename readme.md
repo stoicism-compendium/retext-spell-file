@@ -6,29 +6,35 @@
 
 <!-- Brief description -->
 
-> Simple wrapper for `retext-spell` that uses a personal dictionary file.
+_**`retext-spell` with `.respell` personal dictionary file support.**_
+
+This package provides the exact same interface and functionality as
+[`retext-spell`][retext-spell] with one small modification.
+
+1. **`retext-spell`** takes a **`personal`** option, which is a string of lines,
+   in which each line is an entry in an [Hunspell][hunspell] **personal
+   dictionary** (a.k.a. word list).
+
+2. **`retext-spell-file`** also takes a `personal` option. But if that
+   `personal` option is falsy, it will search up the directory hierarchy for a
+   file called **`.respell`** (UTF-8) and read its contents into the value
+   passed to `personal`.
 
 <!-- Sections -->
 
-## Introduction
+## Installation and Usage
 
-This package provides the exact same interface and functionality as
-[`retext-spell`][retext-spell] with the addition of one feature.
+1. See [`retext-spell`][retext-spell] for general installation and usage
+   instructions.
+2. Replace `retext-spell` with `retext-spell-file`.
+3. Leave `options.personal` undefined.
+4. Add a file named `.respell` to the top level of your project.
+5. Add one correctly spelled word per line to `.respell`.
 
-If you do not pass the **`personal`** attribute in the options to
-`retext-spell-file`, it will look (upwards in the directory hierarchy) for a
-file called **`.dictionary.txt`** and feed those contents as a string to the
-`personal` attribute of `retext-spell`.
+For more information:
 
-* See the [Hunspell dictionaries][hunspell] for a discussion of the **personal
-  dictionary format**.
-* See [`.dictionary.txt`][dictionary] in this repository for an example.
-
-In all other ways, `retext-spell-file` should look and act like `retext-spell`,
-including when the `personal` attribute is passed.
-
-If something about the above description is not true, please [report
-it][issues].
+* See [hunspell(5)][hunspell-man] for the **personal dictionary format**.
+* See [`.respell`](./.respell) for an example.
 
 ## License
 
@@ -37,9 +43,8 @@ it][issues].
 <!-- Definitions, sorted alphabetically -->
 
 [author]: https://github.com/spl
-[dictionary]: ./.dictionary.txt
-[hunspell]: https://linux.die.net/man/4/hunspell
-[issues]: https://github.com/spl/retext-spell-file/issues
+[hunspell-man]: https://www.manpagez.com/man/5/hunspell/
+[hunspell]: https://hunspell.github.io/
 [license]: ./license.md
 [retext-spell]: https://github.com/retextjs/retext-spell
 [tests-badge]: https://github.com/stoicism-compendium/retext-spell-file/workflows/tests/badge.svg

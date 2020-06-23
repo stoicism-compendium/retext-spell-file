@@ -2,7 +2,7 @@
 
 const findUp = require('find-up')
 const fs = require('fs')
-const spell = require('retext-spell')
+const retextSpell = require('retext-spell')
 
 module.exports = run
 
@@ -10,14 +10,14 @@ function run(options) {
   // 1. If `options` has the `personal` attribute, we'll act like
   // `retext-spell`.
   if (options && options.personal) {
-    return spell(options)
+    return retextSpell(options)
   }
 
   // 2. Try to find the personal dictionary file. If it is not found, act like
   // `retext-spell`.
-  const dictionaryPath = findUp.sync('.dictionary.txt')
-  if (!dictionaryPath) {
-    return spell(options)
+  const personalDictionaryPath = findUp.sync('.respell')
+  if (!personalDictionaryPath) {
+    return retextSpell(options)
   }
 
   // 3. Set up `options` as an object.
@@ -34,6 +34,6 @@ function run(options) {
 
   // 4. Read the personal dictionary file and pass the contents to
   // `retext-spell`.
-  options.personal = fs.readFileSync(dictionaryPath)
-  return spell(options)
+  options.personal = fs.readFileSync(personalDictionaryPath, 'utf8')
+  return retextSpell(options)
 }
