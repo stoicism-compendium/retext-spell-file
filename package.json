@@ -1,7 +1,7 @@
 {
   "name": "retext-spell-file",
   "version": "0.0.1",
-  "description": "Simple wrapper for retext-spell that uses a personal dictionary file",
+  "description": "retext-spell with .respell personal dictionary file support",
   "license": "BlueOak-1.0.0",
   "keywords": [
     "unified",
@@ -35,6 +35,7 @@
     "prettier": "*",
     "remark-cli": "^8.0.0",
     "remark-preset-stoicism": "git+https://github.com/stoicism-compendium/remark-preset-stoicism.git",
+    "require-self": "^0.2.3",
     "stoicism-js-style": "git+https://github.com/stoicism-compendium/stoicism-js-style.git"
   },
   "scripts": {
@@ -44,6 +45,7 @@
     "format": "npm run format-md && npm run format-js",
     "format-js": "prettier --write '**/*.js' && eslint --fix .",
     "format-md": "remark --output --quiet --frail .",
+    "postinstall": "require-self",
     "test": "npm run check-md && npm run check-js && npm run depcheck"
   },
   "eslintIgnore": [
