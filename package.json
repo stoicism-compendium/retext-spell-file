@@ -45,7 +45,7 @@
     "format": "npm run format-md && npm run format-js",
     "format-js": "prettier --write '**/*.js' && eslint --fix .",
     "format-md": "remark --output --quiet --frail .",
-    "postinstall": "require-self",
+    "prepare": "require-self",
     "test": "npm run check-md && npm run check-js && npm run depcheck"
   },
   "eslintIgnore": [
