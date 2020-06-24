@@ -28,4 +28,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
+    # This uses the cyclical dependency to self-test.
+    - run: npx require-self
     - run: npm test

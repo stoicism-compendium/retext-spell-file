@@ -35,7 +35,6 @@
     "prettier": "*",
     "remark-cli": "^8.0.0",
     "remark-preset-stoicism": "git+https://github.com/stoicism-compendium/remark-preset-stoicism.git",
-    "require-self": "^0.2.3",
     "stoicism-js-style": "git+https://github.com/stoicism-compendium/stoicism-js-style.git"
   },
   "scripts": {
@@ -45,7 +44,6 @@
     "format": "npm run format-md && npm run format-js",
     "format-js": "prettier --write '**/*.js' && eslint --fix .",
     "format-md": "remark --output --quiet --frail .",
-    "prepare": "require-self",
     "test": "npm run check-md && npm run check-js && npm run depcheck"
   },
   "eslintIgnore": [
