@@ -28,5 +28,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: npm pretest # Set up the self-dependency for testing.
+    - run: npm run pretest # Set up the self-dependency for testing.
     - run: npm test
