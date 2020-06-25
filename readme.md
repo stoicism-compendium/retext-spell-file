@@ -9,7 +9,7 @@
 _**`retext-spell` with `.respell` personal dictionary file support.**_
 
 This package provides the exact same interface and functionality as
-[`retext-spell`][retext-spell] with one small modification.
+[`retext-spell`][retext-spell] with one small but useful modification.
 
 1. **`retext-spell`** takes a **`personal`** option, which is a string of lines,
    in which each line is an entry in an [Hunspell][hunspell] **personal
@@ -17,24 +17,28 @@ This package provides the exact same interface and functionality as
 
 2. **`retext-spell-file`** also takes a `personal` option. But if that
    `personal` option is falsy, it will search up the directory hierarchy for a
-   file named **`.respell`** (UTF-8) and read its contents into the value passed
-   to `personal`.
+   file named **`.respell`** and read its (UTF-8) contents into a value that is
+   passed to `retext-spell` in the `personal` option.
 
 <!-- Sections -->
 
-## Installation and Usage
+## Installation
 
-1. See [`retext-spell`][retext-spell] for general installation and usage
-   instructions.
-2. Replace `retext-spell` with `retext-spell-file`.
-3. Leave `options.personal` undefined.
-4. Add a file named `.respell` to the top level of your project.
-5. Add one correctly spelled word per line to `.respell`.
+Follow the [`retext-spell`][retext-spell] installation instructions but replace
+`retext-spell` with `retext-spell-file`.
+
+## Usage
+
+1. Refer to the [`retext-spell`][retext-spell] usage instructions but replace
+   `retext-spell` with `retext-spell-file`.
+2. Leave `options.personal` undefined.
+3. Add a file named `.respell` to the top level of your project.
+4. Add one correctly spelled word per line to `.respell`.
 
 For more information:
 
 * See [hunspell(5)][hunspell-man] for the **personal dictionary format**.
-* See [`.respell`](./.respell) for an example.
+* See our [`.respell`](./.respell) for an example.
 
 ## License
 
