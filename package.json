@@ -34,8 +34,8 @@
     "eslint-plugin-standard": "*",
     "prettier": "*",
     "remark-cli": "^8.0.0",
-    "remark-preset-stoicism": "git+https://github.com/stoicism-compendium/remark-preset-stoicism.git",
-    "stoicism-js-style": "git+https://github.com/stoicism-compendium/stoicism-js-style.git"
+    "remark-preset-stoicism": "^0.0.1",
+    "stoicism-js-style": "^0.0.1"
   },
   "scripts": {
     "check-js": "prettier --check '**/*.js' && eslint .",
