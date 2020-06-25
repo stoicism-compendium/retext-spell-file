@@ -1,6 +1,6 @@
 {
   "name": "retext-spell-file",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "retext-spell with .respell personal dictionary file support",
   "license": "BlueOak-1.0.0",
   "keywords": [
