@@ -2,7 +2,7 @@
 
 <!-- Badges -->
 
-![tests][tests-badge]
+![test][test-badge]
 
 <!-- Brief description -->
 
@@ -47,4 +47,4 @@ For more information:
 [hunspell]: https://hunspell.github.io/
 [license]: ./license.md
 [retext-spell]: https://github.com/retextjs/retext-spell
-[tests-badge]: https://github.com/stoicism-compendium/retext-spell-file/workflows/tests/badge.svg
+[test-badge]: https://github.com/stoicism-compendium/retext-spell-file/workflows/test/badge.svg
