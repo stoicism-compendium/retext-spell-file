@@ -41,12 +41,14 @@
   "scripts": {
     "check-js": "prettier --check '**/*.js' && eslint .",
     "check-md": "remark --quiet --frail .",
+    "check-yml": "prettier --check '**/*.yml'",
     "depcheck": "depcheck",
     "format": "npm run format-md && npm run format-js",
     "format-js": "prettier --write '**/*.js' && eslint --fix .",
     "format-md": "remark --output --quiet --frail .",
+    "format-yml": "prettier --write '**/*.yml'",
     "pretest": "require-self",
-    "test": "npm run check-md && npm run check-js && npm run depcheck"
+    "test": "npm run check-md && npm run check-yml && npm run check-js && npm run depcheck"
   },
   "eslintIgnore": [
     "node_modules"
