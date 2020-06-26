@@ -2,7 +2,7 @@
 
 <!-- Badges -->
 
-![test][test-badge]
+[![test][test-badge]][test]
 
 <!-- Brief description -->
 
@@ -52,3 +52,4 @@ For more information:
 [license]: ./license.md
 [retext-spell]: https://github.com/retextjs/retext-spell
 [test-badge]: https://github.com/stoicism-compendium/retext-spell-file/workflows/test/badge.svg
+[test]: https://github.com/stoicism-compendium/retext-spell-file/actions?query=workflow%3Atest
