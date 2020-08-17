@@ -22,7 +22,7 @@
     "index.js"
   ],
   "dependencies": {
-    "find-up": "^4.1.0",
+    "find-up": "^5.0.0",
     "retext-spell": "^4.0.0"
   },
   "devDependencies": {
