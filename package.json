@@ -34,7 +34,7 @@
     "eslint-plugin-promise": "*",
     "eslint-plugin-standard": "*",
     "prettier": "*",
-    "remark-cli": "^8.0.1",
+    "remark-cli": "^9.0.0",
     "remark-preset-stoicism": "^0.0.2",
     "require-self": "^0.2.3",
     "stoicism-js-style": "^0.0.1"
